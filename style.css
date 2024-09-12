@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background:linear-gradient(to right, rgb(110, 5, 114), rgb(75, 9, 198));
+}
+.headd {
+    margin: 20px;
+    text-align: center;
+}
+.headd h1 {
+    font-family: Arial, sans-serif;
+    color: rgb(230, 200, 246);
+}
+.weatherForm {
+    width: 40%;
+    background-color: rgb(208, 185, 228);
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.592);
+    border-radius: 30px;
+}
+
+.weatherForm .cityInput {
+    width: 60%;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 15px 10px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    color: rgb(64, 7, 102);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    text-align: center;
+}
+
+.weatherForm .cityInput::placeholder {
+    color: rgba(64, 7, 102, 0.442);
+}
+
+.weatherForm button {
+    width: 40%;
+    background:linear-gradient(to right, rgb(110, 5, 114), rgb(75, 9, 198));
+    color: white;
+    font-size: 1rem;
+    padding: 15px 10px;
+    font-weight: bold;
+    border: none; 
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+.weatherForm button:hover {
+    background:linear-gradient(to left, rgb(110, 5, 114), rgb(75, 9, 198));
+}
+
+.card {
+    font-family: Arial, sans-serif;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(170, 111, 226, 0.565);
+    margin-top: 80px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.428);
+    color: rgb(230, 200, 246);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.cityDisplay, .tempDisplay {
+    font-size: 2rem;
+    margin: 15px 0px;
+    font-weight: bold;
+    color: rgb(230, 200, 246);
+}
+
+.humidityDisplay {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.descDisplay {
+    font-style: italic;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.weatherEmoji {
+    font-size: 3rem;
+}
+
+.errorDisplay {
+    font-style: italic;
+}
+
+.foot {
+    position: absolute;
+    bottom: 10px;
+    background-color: red;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: rgb(230, 200, 246);
+    color: rgb(64, 7, 102);
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 900px){
+    .weatherForm {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 790px){
+    .weatherForm {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .weatherForm {
+        width: 80%;
+    }
+}
